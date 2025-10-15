@@ -39,7 +39,7 @@ Pequeno formulário para que os visitantes da Confeitaria Encantada façam seu p
 1. Clone ou baixe este repositório.
 
 ```bash
-  git clone https://github.com/alinetakai/confeitaria-encantada
+  git clone https://github.com/alinetakai/confeitaria-encantada-v2
 ```
 2. Abra o arquivo `index.html` em seu navegador.
 
