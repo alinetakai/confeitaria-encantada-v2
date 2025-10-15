@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confeitaria Encantada - Pedido Mágico</title>
+  <link rel="shortcut icon" href="https://i.postimg.cc/wTW0VGhq/confeitaria-favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧁 Pedido Mágico da Confeitaria Encantada</h1>
+  <p>Preencha seu pedido e deixe a magia dos doces acontecer!</p>
+
+  <form autocomplete="on">
+
+    <fieldset>
+      <legend>Informações do Cliente</legend>
+      
+      <label>
+        Nome do cliente:
+        <input type="text" name="nome" placeholder="Ex: Luna Doce" required autofocus maxlength="20">
+      </label>
+
+      <label>
+        E-mail encantado:
+        <input type="email" name="email" placeholder="luna@doce.com" required autocomplete="off">
+      </label>
+
+      <label>
+        Telefone encantado:
+        <input type="tel" name="telefone" pattern="[0-9]{10,11}" title="Digite apenas números (10 ou 11 dígitos)">
+      </label>
+
+      <label>
+        Idade:
+        <input type="number" name="idade" min="10" max="120" required>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Detalhes do Pedido</legend>
+
+      <label>
+        Sabor do bolo:
+        <select required>
+          <option value="">Selecione um sabor</option>
+          <option value="chocolate">Chocolate Encantado</option>
+          <option value="baunilha">Baunilha dos Sonhos</option>
+          <option value="morango">Morango Mágico</option>
+          <option value="limão">Limão Luminoso</option>
+        </select>
+      </label>
+
+      <label>
+        Código do Cupom de Fada:
+        <input type="text" value="MAGIA2025" readonly>
+      </label>
+
+      <label>
+        Autorização do Reino Doce:
+        <input type="text" value="APROVADO" disabled>
+      </label>
+
+      <label>
+        Mensagem ao confeiteiro:
+        <textarea maxlength="50" placeholder="Ex: Capriche no glitter mágico!"></textarea>
+      </label>
+    </fieldset>
+
+    <button type="submit">Enviar Pedido ✨</button>
+  </form>
+</body>
+</html>
